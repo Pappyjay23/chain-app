@@ -1,0 +1,35 @@
+/* Menu Bar */
+.bar1,
+.bar2,
+.bar3 {
+	width: 19px;
+	height: 2px;
+	background-color: #000;
+	margin: 5px 0;
+	transition: 0.4s;
+	position: relative;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+	transform: rotate(45deg);
+	top: 7px;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+	opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+	transform: rotate(135deg);
+	top: -7px;
+}
+
+.menu__bar {
+	/* color: #fff; */
+	font-size: 1.3rem;
+	cursor: pointer;
+	margin-left: 1rem;
+}
