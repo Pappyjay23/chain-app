@@ -6,7 +6,7 @@ const HeroSection = () => {
 		<div className="px-5 py-20">
 			<div className="mb-10">
 				<h1 className="text-5xl leading-normal capitalize text-center font-extrabold mb-5">Get the latest apps from app stores</h1>
-				<p className="text-sm leading-relaxed text-center text-slate-700 font-light mb-12">
+				<p className="text-sm leading-relaxed text-center text-slate-500 font-light mb-12">
 					Chain App Dev is an app landing page HTML5 template based on Bootstrap
 					v5.1.3 CSS layout provided by TemplateMo, a great website to download
 					free CSS templates.

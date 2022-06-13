@@ -1,8 +1,8 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 /* Menu Bar */
@@ -39,4 +39,35 @@
 	font-size: 1.3rem;
 	cursor: pointer;
 	margin-left: 1rem;
+}
+
+/* Services Section */
+/* .services__container{
+	background-image: url("images/services-right-dec.png");
+	background-position: right;
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+	position: relative;
+	top: 50px;
+	z-index: -1;
+} */
+
+.card__container:hover {
+	background-image: url(images/service-bg.jpg);
+	background-size: cover;
+	background-position: top right;
+	transition: all 0.5s ease;
+	color: #fff;
+}
+.card__container:hover h2,
+.card__container:hover p,
+.card__container:hover a{
+	color: #fff;
+}
+.card__container:hover .card__icon {
+	display: none;
+}
+.card__container:hover .card__icon__hover {
+	display: flex;
 }
