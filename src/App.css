@@ -71,3 +71,8 @@
 .card__container:hover .card__icon__hover {
 	display: flex;
 }
+
+/* About Section */
+.about__btn{
+	background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+}

@@ -37,3 +37,22 @@ export const ServiceData = [
         link: 'Read More'
     }
 ]
+
+export const AboutData = [
+    {
+        title: "Maintenance Problems",
+        desc: "We help with good maintenance"
+    },
+    {
+        title: "24/7 Help & Support",
+        desc: "We are always available to help"
+    },
+    {
+        title: "Fixing Issues About",
+        desc: "We fix pending issues"
+    },
+    {
+        title: "Co. Development",
+        desc: "We work together to grow and develop"
+    },
+]
