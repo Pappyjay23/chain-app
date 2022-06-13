@@ -76,3 +76,11 @@
 .about__btn{
 	background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
 }
+.ratings:hover p{
+	color: blue;
+}
+.quote__card{
+	background-image: url(images/client-bg.png);
+	/* background-position: center; */
+	background-size: cover;
+}

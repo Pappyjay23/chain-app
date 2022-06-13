@@ -56,3 +56,26 @@ export const AboutData = [
         desc: "We work together to grow and develop"
     },
 ]
+
+export const ClientData = [
+    {
+        name: 'David Martino Co',
+        date:'30 November 2021',
+        rating: '4.8',
+    },
+    {
+        name: 'Jake Harris Nyo',
+        date:'29 November 2021',
+        rating: '4.5',
+    },
+    {
+        name: 'May Catherina',
+        date:'27 November 2021',
+        rating: '4.7',
+    },
+    {
+        name: 'Mark Amber Doe',
+        date:'21 November 2021',
+        rating: '4.3',
+    },
+]

@@ -1,9 +1,10 @@
 import React from 'react'
-import Navbar from './components/Navbar'
 import "./App.css"
+import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import Services from './components/Services'
 import About from './components/About'
+import Clients from './components/Clients'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <HeroSection />
         <Services />
         <About />
+        <Clients />
     </div>
   )
 }
