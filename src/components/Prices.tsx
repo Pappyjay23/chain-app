@@ -43,8 +43,8 @@ const Prices = () => {
 						<div className="flex justify-center mb-5">
 							<a href='/' className="text-blue-600 text-sm px-4 py-2 border border-blue-600 rounded-full font-bold">Purchase This Plan Now</a>
 						</div>
-						<div className='absolute bottom-0 right-0 -z-10'>
-							<img src={item.bgdBottom} alt='Price Bgd' />
+						<div className='absolute bottom-0 left-0 right-0 -z-10'>
+							<img src={item.bgdBottom} alt='Price Bgd' className="w-full" />
 						</div>
 					</div>
 				))}
