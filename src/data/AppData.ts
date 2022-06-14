@@ -111,3 +111,18 @@ export const PriceCardData = [
         bgdBottom: PricingBgd4,
     },
 ]
+
+export const FooterLinks = [
+    {
+        title: "Contact Us",
+        links: ["Rio de Janeiro - RJ, 22795-008, Brazil", "010-020-0340", "info@company.co"]
+    },
+    {
+        title: "About Us",
+        links: ['Home', 'Services', 'About', 'Testimonials', 'Pricing']
+    },
+    {
+        title: "Useful Links",
+        links: ['Free Apps', 'App Engine', 'Programming', 'Development', 'App News', 'App Dev Team', 'Digital Web', 'Normal Apps']
+    },
+]

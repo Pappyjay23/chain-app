@@ -84,3 +84,9 @@
 	/* background-position: center; */
 	background-size: cover;
 }
+
+.mailing{
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	background-position: bottom;
+}
