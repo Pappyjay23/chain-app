@@ -7,6 +7,11 @@ import Icon3H from "../images/service-icon-hover-03.png"
 import Icon4 from "../images/service-icon-04.png";
 import Icon4H from "../images/service-icon-hover-04.png"
 
+import PricingBgd1 from "../images/regular-table-top.png";
+import PricingBgd2 from "../images/regular-table-bottom.png";
+import PricingBgd3 from "../images/pro-table-top.png";
+import PricingBgd4 from "../images/pro-table-bottom.png";
+
 export const ServiceData = [
     {
         icon: Icon1,
@@ -77,5 +82,32 @@ export const ClientData = [
         name: 'Mark Amber Doe',
         date:'21 November 2021',
         rating: '4.3',
+    },
+]
+
+export const PriceCardData = [
+    {
+        price: '$12',
+        title: "Standard Plan App",
+        desc: ['1 week free maintenance', '20TB of storage'],
+        descDone: ['Life time support', 'Premium Add ons', "Fastest Network", 'More options'],
+        bgdTop: PricingBgd1,
+        bgdBottom: PricingBgd2,
+    },
+    {
+        price: '$25',
+        title: "Business Plan App",
+        desc: ['2 weeks free maintenance', '50TB of storage', 'Life time support', 'Premium Add ons',],
+        descDone: [ "Fastest Network", 'More options'],
+        bgdTop: PricingBgd3,
+        bgdBottom: PricingBgd4,
+    },
+    {
+        price: '$66',
+        title: "Premium Plan App",
+        desc: ['1 month free maintenance', '120TB of storage', 'Life time support', 'Premium Add ons', "Fastest Network", 'More options'],
+        descDone: [],
+        bgdTop: PricingBgd3,
+        bgdBottom: PricingBgd4,
     },
 ]

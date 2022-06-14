@@ -12,8 +12,8 @@ const HeroSection = () => {
 					free CSS templates.
 				</p>
 				<div className="flex justify-center">
-					<a href='/' className="mr-4 rounded-full font-bold bg-blue-500 text-white py-3 px-5">Free Quote</a>
-					<a href='/' className="rounded-full font-bold bg-blue-500 text-white py-3 px-5">Free Quote</a>
+					<a href='/' className="mr-4 rounded-full font-bold bg-blue-500 text-white text-sm py-3 px-5">Free Quote</a>
+					<a href='/' className="rounded-full font-bold bg-blue-500 text-white text-sm py-3 px-5">Free Quote</a>
 				</div>
 			</div>
             <div>
