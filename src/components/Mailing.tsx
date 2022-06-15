@@ -4,7 +4,7 @@ import Logo from "../images/white-logo.png";
 
 const Mailing = () => {
 	return (
-		<div className='mailing px-5 py-10'>
+		<div id="mailing" className='mailing px-5 py-10'>
 			<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-5'>
 				Join our mailing list to recieve the news & latest trends
 			</h1>

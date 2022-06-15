@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
 }
 
 /* Menu Bar */
@@ -54,7 +55,7 @@
 } */
 
 .card__container:hover {
-	background-image: url(images/service-bg.jpg);
+	background-image: url(../images/service-bg.jpg);
 	background-size: cover;
 	background-position: top right;
 	transition: all 0.5s ease;
@@ -80,13 +81,13 @@
 	color: blue;
 }
 .quote__card{
-	background-image: url(images/client-bg.png);
+	background-image: url(../images/client-bg.png);
 	/* background-position: center; */
 	background-size: cover;
 }
 
 .mailing{
-	background-image: url(images/footer-bg.png);
+	background-image: url(../images/footer-bg.png);
 	background-size: cover;
 	background-position: bottom;
 }

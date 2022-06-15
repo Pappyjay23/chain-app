@@ -4,7 +4,7 @@ import AboutBgd from "../images/about-right-dec.png"
 
 const About = () => {
 	return (
-		<div className='px-5 py-8'>
+		<div id="about" className='px-5 py-8'>
 			<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-5'>
 				About <span className='text-blue-600'>What We Do</span> & Who We Are.
 			</h1>
