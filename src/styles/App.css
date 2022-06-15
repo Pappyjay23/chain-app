@@ -43,17 +43,6 @@
 }
 
 /* Services Section */
-/* .services__container{
-	background-image: url("images/services-right-dec.png");
-	background-position: right;
-	height: 200px;
-	width: 100%;
-	background-size: cover;
-	position: relative;
-	top: 50px;
-	z-index: -1;
-} */
-
 .card__container:hover {
 	background-image: url(../images/service-bg.jpg);
 	background-size: cover;
@@ -76,14 +65,22 @@
 /* About Section */
 .about__btn{
 	background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+	background-size: 200%;
+	transition: all 0.5s ease;
+}
+.about__btn:hover{
+	background-position: right center;
 }
 .ratings:hover p{
 	color: blue;
 }
 .quote__card{
 	background-image: url(../images/client-bg.png);
-	/* background-position: center; */
 	background-size: cover;
+	transition: all 0.3s ease;
+}
+.quote__card:hover{
+	background-position: center;
 }
 
 .mailing{
