@@ -54,6 +54,9 @@ const Navbar = () => {
 				<a onClick={closeNav} href='#mailing' className='py-3 font-bold'>
 					Newsletter
 				</a>
+				<a onClick={closeNav} href='#mailing' className='py-3 font-bold'>
+					Sign In
+				</a>
 			</div>
 		</nav>
 	);
