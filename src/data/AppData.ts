@@ -67,21 +67,25 @@ export const ClientData = [
         name: 'David Martino Co',
         date:'30 November 2021',
         rating: '4.8',
+        field: 'Financial Apps',
     },
     {
         name: 'Jake Harris Nyo',
         date:'29 November 2021',
         rating: '4.5',
+        field: 'Digital Business',
     },
     {
         name: 'May Catherina',
         date:'27 November 2021',
         rating: '4.7',
+        field: 'Business & Economics',
     },
     {
         name: 'Mark Amber Doe',
         date:'21 November 2021',
         rating: '4.3',
+        field: 'Web Development',
     },
 ]
 

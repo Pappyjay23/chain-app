@@ -11,7 +11,7 @@
 	content: '';
 	width: 20px;
 	height: 2px;
-	background-color: blue;
+	/* background-color: blue; */
 }
 
 /* Menu Bar */
@@ -57,6 +57,7 @@
 	background-position: top right;
 	transition: all 0.5s ease;
 	color: #fff;
+	cursor: pointer;
 }
 .card__container:hover h2,
 .card__container:hover p,
@@ -82,6 +83,9 @@
 .ratings:hover p{
 	color: blue;
 }
+.ratings:hover span{
+	color: blue;
+}
 .quote__card{
 	background-image: url(../images/client-bg.png);
 	background-size: cover;
@@ -95,4 +99,28 @@
 	background-image: url(../images/footer-bg.png);
 	background-size: cover;
 	background-position: bottom;
+}
+@media screen and (min-width:768px) {
+	.mailing{
+		background-position: top top;
+		background-size: 400%;
+		background-repeat: no-repeat;
+	}
+}
+
+.rot-90{
+	transition: all 0.5s ease;
+}
+.rot-90:hover{
+	/* transform: rotate(360deg); */
+	transform: translateY(-20px);
+	cursor: pointer;
+}
+
+.p-card{
+	transition: all 0.5s ease;
+	transform: scale(0.95);
+}
+.p-card:hover{
+	transform: scale(1);
 }

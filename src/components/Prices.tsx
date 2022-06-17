@@ -4,29 +4,29 @@ import PricingImage from "../images/pricing-table-01.png";
 
 const Prices = () => {
 	return (
-		<div id='prices' className='px-5 py-10'>
+		<div id='prices' className='px-5 py-10 tab:px-8'>
 			<div className='mb-8'>
-				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2'>
+				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2 tab:font-semibold'>
 					We Have The Best Pre-Order{" "}
 					<span className='text-blue-600'>Prices</span> & You Can Get.
 				</h1>
 				<div className='flex justify-center'>
-					<div className='heading__border mr-2'></div>
-					<div className='heading__border'></div>
+					<div className='heading__border bg-blue-600 mr-2'></div>
+					<div className='heading__border bg-blue-600'></div>
 				</div>
 			</div>
 			<div>
 				{PriceCardData.map((item, index) => (
 					<div
 						key={index}
-						className='overflow-hidden relative mb-10 px-4 py-10 rounded-[3rem] shadow-lg border border-slate-100 shadow-slate-200'>
+						className=' w-full overflow-hidden relative mb-10 px-4 py-10 rounded-[3rem] shadow-lg border border-slate-100 shadow-slate-200 tab:w-[60%] mx-auto p-card'>
 						<div className='absolute top-0 left-0 -z-10'>
 							<img src={item.bgdTop} alt='Price Bgd' />
 						</div>
 						<p className='text-white text-[2.5rem] font-extrabold'>
 							{item.price}
 						</p>
-						<p className='text-center text-xl font-extrabold mb-8'>
+						<p className='text-center text-xl font-extrabold mb-8 tab:font-semibold'>
 							{item.title}
 						</p>
 						<div className='flex justify-center mb-8'>

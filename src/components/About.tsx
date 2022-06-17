@@ -5,17 +5,17 @@ import AboutImage from "../images/about-right-dec.png";
 
 const About = () => {
 	return (
-		<div id='about' className='px-5 py-8 relative'>
+		<div id='about' className='px-5 py-8 relative tab:px-8'>
 			<div className='absolute -top-28 left-0 -z-10'>
 				<img src={AboutBgd} alt='Services Bgd' className='w-full' />
 			</div>
-			<div className="mb-8">
-				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2'>
+			<div className='mb-8'>
+				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2 tab:font-semibold'>
 					About <span className='text-blue-600'>What We Do</span> & Who We Are.
 				</h1>
 				<div className='flex justify-center'>
-					<div className='heading__border mr-2'></div>
-					<div className='heading__border'></div>
+					<div className='heading__border bg-blue-600 mr-2'></div>
+					<div className='heading__border bg-blue-600'></div>
 				</div>
 			</div>
 			<div>
@@ -23,8 +23,8 @@ const About = () => {
 					<a href='/'>
 						<div
 							key={index}
-							className='text-center bg-white mb-5 rounded-[5rem] p-3 shadow-lg border border-slate-100 shadow-slate-200'>
-							<p className='text-lg font-extrabold mb-1 hover:text-blue-500'>
+							className='text-center bg-white mb-5 rounded-[5rem] p-3 shadow-lg border border-slate-100 shadow-slate-200 w-full tab:w-[70%] tab:mx-auto'>
+							<p className='text-lg font-extrabold mb-1 hover:text-blue-500 tab:font-semibold tab:text-xl'>
 								{item.title}
 							</p>
 							<p className='text-sm text-slate-500 font-light'>{item.desc}</p>

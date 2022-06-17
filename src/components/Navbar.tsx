@@ -5,9 +5,9 @@ const Navbar = () => {
 	const [nav, setNav] = useState<boolean>(false);
 	const [fixed, setFixed] = useState<boolean>(false);
 
-	const closeNav = () =>{
-		setNav(false)
-	}
+	const closeNav = () => {
+		setNav(false);
+	};
 
 	const toggleFixed = () => {
 		const scrolled = document.documentElement.scrollTop;
@@ -17,16 +17,39 @@ const Navbar = () => {
 			setFixed(false);
 		}
 	};
-	window.addEventListener("scroll", toggleFixed)
+	window.addEventListener("scroll", toggleFixed);
 
 	return (
-		<nav className={`bg-white border-b-2 border-slate-200 w-full z-10 ${fixed ? 'fixed': 'relative'}`}>
-			<div className='nav__container px-5 py-5 flex justify-between items-center'>
+		<nav
+			className={`bg-white border-b-2 border-slate-200 w-full z-10 ${
+				fixed ? "fixed" : "relative"
+			}`}>
+			<div className='nav__container px-5 py-5 flex justify-between items-center tab:px-8'>
 				<a onClick={closeNav} href='#home' className='nav__logo'>
 					<img src={Logo} alt='Logo' className='h-10' />
 				</a>
+				<div className="hidden tab:flex">
+					<a onClick={closeNav} href='#home' className='py-3 mx-3'>
+						Home
+					</a>
+					<a onClick={closeNav} href='#services' className='py-3 mx-3'>
+						Services
+					</a>
+					<a onClick={closeNav} href='#about' className='py-3 mx-3'>
+						About
+					</a>
+					<a onClick={closeNav} href='#prices' className='py-3 mx-3'>
+						Pricing
+					</a>
+					<a onClick={closeNav} href='#mailing' className='py-3 mx-3'>
+						Newsletter
+					</a>
+					<a onClick={closeNav} href='#home' className='mx-3 about__btn px-7 py-3 rounded-full text-white font-bold text-sm mb-2'>
+						Sign In
+					</a>
+				</div>
 				<div
-					className={nav ? "change menu__bar" : "menu__bar"}
+					className={`${nav ? "change menu__bar" : "menu__bar"} tab:hidden`}
 					onClick={() => setNav(!nav)}>
 					<div className='bar1'></div>
 					<div className='bar2'></div>
@@ -54,7 +77,7 @@ const Navbar = () => {
 				<a onClick={closeNav} href='#mailing' className='py-3 font-bold'>
 					Newsletter
 				</a>
-				<a onClick={closeNav} href='#mailing' className='py-3 font-bold'>
+				<a onClick={closeNav} href='#home' className='py-3 font-bold'>
 					Sign In
 				</a>
 			</div>
