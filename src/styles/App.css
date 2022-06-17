@@ -1,9 +1,17 @@
+/* Reusables */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
 	scroll-behavior: smooth;
+}
+
+.heading__border{
+	content: '';
+	width: 20px;
+	height: 2px;
+	background-color: blue;
 }
 
 /* Menu Bar */

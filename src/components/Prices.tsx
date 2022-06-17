@@ -4,11 +4,17 @@ import PricingImage from "../images/pricing-table-01.png";
 
 const Prices = () => {
 	return (
-		<div id="prices" className='px-5 py-10'>
-			<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-5'>
-				We Have The Best Pre-Order <span className='text-blue-600'>Prices</span>{" "}
-				& You Can Get.
-			</h1>
+		<div id='prices' className='px-5 py-10'>
+			<div className='mb-8'>
+				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2'>
+					We Have The Best Pre-Order{" "}
+					<span className='text-blue-600'>Prices</span> & You Can Get.
+				</h1>
+				<div className='flex justify-center'>
+					<div className='heading__border mr-2'></div>
+					<div className='heading__border'></div>
+				</div>
+			</div>
 			<div>
 				{PriceCardData.map((item, index) => (
 					<div
@@ -28,7 +34,9 @@ const Prices = () => {
 						</div>
 						<div className='text-center mb-10'>
 							{item.desc.map((desc) => (
-								<p className='mb-4 text-sm text-blue-600 font-light' key={index}>
+								<p
+									className='mb-4 text-sm text-blue-600 font-light'
+									key={index}>
 									{desc}
 								</p>
 							))}
@@ -40,11 +48,15 @@ const Prices = () => {
 								</p>
 							))}
 						</div>
-						<div className="flex justify-center mb-5">
-							<a href='/' className="text-blue-600 text-sm px-4 py-2 duration-300 border border-blue-600 rounded-full font-bold hover:bg-blue-600 hover:text-white">Purchase This Plan Now</a>
+						<div className='flex justify-center mb-5'>
+							<a
+								href='/'
+								className='text-blue-600 text-sm px-4 py-2 duration-300 border border-blue-600 rounded-full font-bold hover:bg-blue-600 hover:text-white'>
+								Purchase This Plan Now
+							</a>
 						</div>
 						<div className='absolute bottom-0 left-0 right-0 -z-10'>
-							<img src={item.bgdBottom} alt='Price Bgd' className="w-full" />
+							<img src={item.bgdBottom} alt='Price Bgd' className='w-full' />
 						</div>
 					</div>
 				))}

@@ -1,17 +1,23 @@
 import React from "react";
 import { AboutData } from "../data/AppData";
-import AboutBgd from "../images/services-left-dec.png"
-import AboutImage from "../images/about-right-dec.png"
+import AboutBgd from "../images/services-left-dec.png";
+import AboutImage from "../images/about-right-dec.png";
 
 const About = () => {
 	return (
-		<div id="about" className='px-5 py-8 relative'>
+		<div id='about' className='px-5 py-8 relative'>
 			<div className='absolute -top-28 left-0 -z-10'>
-				<img src={AboutBgd} alt='Services Bgd' className="w-full" />
+				<img src={AboutBgd} alt='Services Bgd' className='w-full' />
 			</div>
-			<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-5'>
-				About <span className='text-blue-600'>What We Do</span> & Who We Are.
-			</h1>
+			<div className="mb-8">
+				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2'>
+					About <span className='text-blue-600'>What We Do</span> & Who We Are.
+				</h1>
+				<div className='flex justify-center'>
+					<div className='heading__border mr-2'></div>
+					<div className='heading__border'></div>
+				</div>
+			</div>
 			<div>
 				{AboutData.map((item, index) => (
 					<a href='/'>
@@ -37,12 +43,12 @@ const About = () => {
 					Start 14-Day Free Trial
 				</a>
 			</div>
-            <p className='text-xs text-center mb-8 text-slate-500'>
+			<p className='text-xs text-center mb-8 text-slate-500'>
 				*No Credit Card Required
 			</p>
-            <div>
-                <img src={AboutImage} alt="About" />
-            </div>
+			<div>
+				<img src={AboutImage} alt='About' />
+			</div>
 		</div>
 	);
 };

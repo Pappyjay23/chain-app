@@ -5,9 +5,15 @@ import Logo from "../images/white-logo.png";
 const Mailing = () => {
 	return (
 		<div id='mailing' className='mailing px-5 py-10'>
-			<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-5'>
-				Join our mailing list to recieve the news & latest trends
-			</h1>
+			<div className="mb-8">
+				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2'>
+					Join our mailing list to recieve the news & latest trends
+				</h1>
+				<div className='flex justify-center'>
+					<div className='heading__border mr-2'></div>
+					<div className='heading__border'></div>
+				</div>
+			</div>
 			<form className='flex flex-col mb-10'>
 				<input
 					type='email'
