@@ -28,13 +28,13 @@ const HeroSection = ({ children }: Props) => {
 					<div className='flex flex-col justify-center mobile-md:flex-row'>
 						<a
 							href='#home'
-							className='mb-4 mx-2 about__btn px-5 py-3 rounded-full text-white font-bold text-sm text-center flex items-center mobile-md:mb-0'>
+							className='mb-4 mx-2 about__btn px-5 py-3 rounded-full text-white font-bold text-sm text-center flex justify-center items-center mobile-md:mb-0'>
 							<span className="mr-2">Get on AppStore</span>
 							<span className="text-xl"><FaApple /></span>
 						</a>
 						<a
 							href='#home'
-							className='mx-2 about__btn px-5 py-3 rounded-full text-white font-bold text-sm text-center flex items-center'>
+							className='mx-2 about__btn px-5 py-3 rounded-full text-white font-bold text-sm text-center flex justify-center items-center'>
 							<span className="mr-2">Get on PlayStore</span>
 							<span className="text-xl"><IoLogoGooglePlaystore /></span>
 						</a>
