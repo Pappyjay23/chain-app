@@ -6,7 +6,7 @@ import { AiFillStar } from "react-icons/ai";
 
 const Clients = () => {
 	return (
-		<div className='px-5 py-8 tab:px-8'>
+		<div className='px-5 py-8 tab:px-8 laptop:max-w-[1200px] laptop:mx-auto'>
 			<div className='mb-8'>
 				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2 tab:font-semibold'>
 					Check What <span className='text-blue-600'>The Clients Say</span> &
@@ -38,6 +38,7 @@ const Clients = () => {
 						</div>
 						<div className='hidden tab:flex flex-col items-center'>
 							<p className='text-slate-500 text-sm font-bold flex items-center'>
+								<span className="mr-1">{item.rating}</span>
 								<span className='mr-1'>
 									<AiFillStar />
 								</span>
@@ -53,7 +54,6 @@ const Clients = () => {
 								<span className='mr-1'>
 									<AiFillStar />
 								</span>
-								<span>{item.rating}</span>
 							</p>
 						</div>
 					</div>

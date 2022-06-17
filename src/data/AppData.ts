@@ -99,20 +99,20 @@ export const PriceCardData = [
         bgdBottom: PricingBgd2,
     },
     {
-        price: '$25',
-        title: "Business Plan App",
-        desc: ['2 weeks free maintenance', '50TB of storage', 'Life time support', 'Premium Add ons',],
-        descDone: [ "Fastest Network", 'More options'],
-        bgdTop: PricingBgd3,
-        bgdBottom: PricingBgd4,
-    },
-    {
         price: '$66',
         title: "Premium Plan App",
         desc: ['1 month free maintenance', '120TB of storage', 'Life time support', 'Premium Add ons', "Fastest Network", 'More options'],
         descDone: [],
         bgdTop: PricingBgd3,
         bgdBottom: PricingBgd4,
+    },
+    {
+        price: '$25',
+        title: "Business Plan App",
+        desc: ['2 weeks free maintenance', '50TB of storage', 'Life time support', 'Premium Add ons',],
+        descDone: [ "Fastest Network", 'More options'],
+        bgdTop: PricingBgd1,
+        bgdBottom: PricingBgd2,
     },
 ]
 

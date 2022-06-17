@@ -7,8 +7,8 @@
 	scroll-behavior: smooth;
 }
 
-.heading__border{
-	content: '';
+.heading__border {
+	content: "";
 	width: 20px;
 	height: 2px;
 	/* background-color: blue; */
@@ -61,7 +61,7 @@
 }
 .card__container:hover h2,
 .card__container:hover p,
-.card__container:hover a{
+.card__container:hover a {
 	color: #fff;
 }
 .card__container:hover .card__icon {
@@ -72,55 +72,98 @@
 }
 
 /* About Section */
-.about__btn{
-	background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+.about__btn {
+	background: linear-gradient(
+		105deg,
+		rgba(91, 104, 235, 1) 0%,
+		rgba(40, 225, 253, 1) 100%
+	);
 	background-size: 200%;
 	transition: all 0.5s ease;
 }
-.about__btn:hover{
+.about__btn:hover {
 	background-position: right center;
 }
-.ratings:hover p{
+.ratings:hover p {
 	color: blue;
 }
-.ratings:hover span{
+.ratings:hover span {
 	color: blue;
 }
-.quote__card{
+.quote__card {
 	background-image: url(../images/client-bg.png);
 	background-size: cover;
 	transition: all 0.3s ease;
 }
-.quote__card:hover{
+.quote__card:hover {
 	background-position: center;
 }
 
-.mailing{
+.mailing {
 	background-image: url(../images/footer-bg.png);
 	background-size: cover;
 	background-position: bottom;
 }
-@media screen and (min-width:768px) {
-	.mailing{
+@media screen and (min-width: 768px) {
+	.mailing {
 		background-position: top top;
-		background-size: 400%;
+		/* background-size: 400%; */
 		background-repeat: no-repeat;
 	}
 }
 
-.rot-90{
+.rot-90 {
 	transition: all 0.5s ease;
 }
-.rot-90:hover{
+.rot-90:hover {
 	/* transform: rotate(360deg); */
 	transform: translateY(-20px);
 	cursor: pointer;
 }
 
-.p-card{
+.p-card {
 	transition: all 0.5s ease;
 	transform: scale(0.95);
 }
-.p-card:hover{
+.p-card:hover {
 	transform: scale(1);
+}
+
+.grad-text {
+	background-image: linear-gradient(
+		105deg,
+		rgba(91, 104, 235, 1) 0%,
+		rgba(40, 225, 253, 1) 100%
+	);
+	background-size: cover;
+	background-clip: text;
+	color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+	.grad-text {
+		color: #fff;
+	}
+	
+}
+
+@media screen and (min-width: 2560px) {
+	.fixed .nav__logo2{
+		display: none;
+	}
+	.fixed .nav__logo{
+		display: flex;
+	}
+	.nav__logo{
+		display: none;
+	}
+	.nav__logo2{
+		display: flex;
+	}
+	.nav__links a{
+		color: white;
+	}
+	.fixed .nav__links a{
+		color: black;
+	}
 }

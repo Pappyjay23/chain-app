@@ -4,7 +4,7 @@ import PricingImage from "../images/pricing-table-01.png";
 
 const Prices = () => {
 	return (
-		<div id='prices' className='px-5 py-10 tab:px-8'>
+		<div id='prices' className='px-5 py-10 tab:px-8 laptop:max-w-[1200px] laptop:mx-auto'>
 			<div className='mb-8'>
 				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2 tab:font-semibold'>
 					We Have The Best Pre-Order{" "}
@@ -15,7 +15,7 @@ const Prices = () => {
 					<div className='heading__border bg-blue-600'></div>
 				</div>
 			</div>
-			<div>
+			<div className="laptop:flex">
 				{PriceCardData.map((item, index) => (
 					<div
 						key={index}

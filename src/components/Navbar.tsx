@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../images/logo.png";
+import Logo2 from "../images/white-logo.png";
 
 const Navbar = () => {
 	const [nav, setNav] = useState<boolean>(false);
@@ -21,27 +22,30 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className={`bg-white border-b-2 border-slate-200 w-full z-10 ${
-				fixed ? "fixed" : "relative"
+			className={`border-b w-full z-10 ${
+				fixed ? "fixed bg-white border-slate-200 transition-all duration-300" : "sticky bg-transparent border-none shadow-sm transition-all duration-300"
 			}`}>
-			<div className='nav__container px-5 py-5 flex justify-between items-center tab:px-8'>
+			<div className='nav__container px-5 py-5 flex justify-between items-center tab:px-8 tab:py-3 laptop:max-w-[1200px] laptop:mx-auto'>
 				<a onClick={closeNav} href='#home' className='nav__logo'>
 					<img src={Logo} alt='Logo' className='h-10' />
 				</a>
-				<div className="hidden tab:flex">
-					<a onClick={closeNav} href='#home' className='py-3 mx-3'>
+				<a onClick={closeNav} href='#home' className='nav__logo2 '>
+					<img src={Logo2} alt='Logo' className='h-10' />
+				</a>
+				<div className="hidden tab:flex tab:items-center nav__links">
+					<a onClick={closeNav} href='#home' className='py-3 mx-3 text-sm'>
 						Home
 					</a>
-					<a onClick={closeNav} href='#services' className='py-3 mx-3'>
+					<a onClick={closeNav} href='#services' className='py-3 mx-3 text-sm'>
 						Services
 					</a>
-					<a onClick={closeNav} href='#about' className='py-3 mx-3'>
+					<a onClick={closeNav} href='#about' className='py-3 mx-3 text-sm'>
 						About
 					</a>
-					<a onClick={closeNav} href='#prices' className='py-3 mx-3'>
+					<a onClick={closeNav} href='#prices' className='py-3 mx-3 text-sm'>
 						Pricing
 					</a>
-					<a onClick={closeNav} href='#mailing' className='py-3 mx-3'>
+					<a onClick={closeNav} href='#mailing' className='py-3 mx-3 text-sm'>
 						Newsletter
 					</a>
 					<a onClick={closeNav} href='#home' className='mx-3 about__btn px-7 py-3 rounded-full text-white font-bold text-sm mb-2'>

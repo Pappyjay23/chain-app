@@ -5,7 +5,7 @@ import ServicesBgd from "../images/services-right-dec.png";
 
 const Services = () => {
 	return (
-		<div id='services' className='relative px-5 py-8 tab:px-8'>
+		<div id='services' className='relative px-5 py-8 tab:px-8 laptop:max-w-[1200px] laptop:mx-auto'>
 			<div className='absolute -top-10 right-0 -z-10'>
 				<img src={ServicesBgd} alt='Services Bgd' className='max-w-6xl' />
 			</div>
@@ -19,7 +19,7 @@ const Services = () => {
 					<div className='heading__border bg-blue-600'></div>
 				</div>
 			</div>
-			<div>
+			<div className="laptop:flex">
 				{ServiceData.map((data, index) => (
 					<ServiceCard key={index} data={data} />
 				))}

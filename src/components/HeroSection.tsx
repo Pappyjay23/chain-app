@@ -2,6 +2,7 @@ import React from "react";
 import HeroImage from "../images/slider-dec.png";
 import {FaApple} from 'react-icons/fa'
 import {IoLogoGooglePlaystore} from 'react-icons/io5'
+import HeroBgd from "../images/slider-left-dec.png"
 
 interface Props {
 	children: JSX.Element;
@@ -9,14 +10,17 @@ interface Props {
 
 const HeroSection = ({ children }: Props) => {
 	return (
-		<div>
+		<div className="relative">
+			<div className="hidden absolute left-0 -z-10 laptop:flex laptop-xl:right-0 laptop-xl:-top-[60rem]">
+				<img src={HeroBgd} alt="Hero Bgd" className="w-[80%] laptop-xl:w-full" />
+			</div>
 			{children}
-			<div id='home' className='px-5 py-20 tab:px-8'>
-				<div className='mb-10'>
-					<h1 className='text-5xl leading-normal capitalize text-center font-extrabold mb-5 tab:font-semibold'>
+			<div id='home' className='px-5 py-20 tab:px-8 laptop:flex laptop:pt-[10rem] laptop:pb-[15rem] laptop:max-w-[1200px] laptop:mx-auto'>
+				<div className='mb-10 laptop:w-[40%] laptop:mx-auto'>
+					<h1 className='grad-text text-5xl leading-normal capitalize text-center font-extrabold mb-5 tab:font-semibold laptop:text-left laptop:text-white'>
 						Get the latest apps from app stores
 					</h1>
-					<p className='text-sm leading-relaxed text-center text-slate-500 font-light mb-12'>
+					<p className='text-sm leading-relaxed text-center text-slate-500 font-light mb-12 laptop:text-left laptop:text-white'>
 						Chain App Dev is an app landing page HTML5 template based on
 						Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great website
 						to download free CSS templates.
@@ -46,7 +50,7 @@ const HeroSection = ({ children }: Props) => {
 						</a> */}
 					</div>
 				</div>
-				<div>
+				<div className="laptop:w-[40%] laptop:mx-auto">
 					<img src={HeroImage} alt='Hero' />
 				</div>
 			</div>
