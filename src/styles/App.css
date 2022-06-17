@@ -11,7 +11,6 @@
 	content: "";
 	width: 20px;
 	height: 2px;
-	/* background-color: blue; */
 }
 
 /* Menu Bar */
@@ -44,7 +43,6 @@
 }
 
 .menu__bar {
-	/* color: #fff; */
 	font-size: 1.3rem;
 	cursor: pointer;
 	margin-left: 1rem;
@@ -107,7 +105,6 @@
 @media screen and (min-width: 768px) {
 	.mailing {
 		background-position: top top;
-		/* background-size: 400%; */
 		background-repeat: no-repeat;
 	}
 }
@@ -116,7 +113,6 @@
 	transition: all 0.5s ease;
 }
 .rot-90:hover {
-	/* transform: rotate(360deg); */
 	transform: translateY(-20px);
 	cursor: pointer;
 }
@@ -127,6 +123,7 @@
 }
 .p-card:hover {
 	transform: scale(1);
+	cursor: pointer;
 }
 
 .grad-text {
