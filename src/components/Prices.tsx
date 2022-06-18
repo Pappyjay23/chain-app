@@ -4,7 +4,7 @@ import PricingImage from "../images/pricing-table-01.png";
 
 const Prices = () => {
 	return (
-		<div id='prices' className='px-5 py-10 tab:px-8 laptop:max-w-[1200px] laptop:mx-auto'>
+		<div id='prices' className='px-5 py-[5rem] tab:px-8 laptop:max-w-[1200px] laptop:mx-auto'>
 			<div className='mb-8'>
 				<h1 className='text-black text-3xl leading-normal capitalize text-center font-extrabold mb-2 tab:font-semibold'>
 					We Have The Best Pre-Order{" "}

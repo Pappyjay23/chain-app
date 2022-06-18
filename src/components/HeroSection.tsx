@@ -10,12 +10,12 @@ interface Props {
 
 const HeroSection = ({ children }: Props) => {
 	return (
-		<div className="relative">
+		<div className="relative" id='home'>
 			<div className="hidden absolute left-0 -z-10 laptop:flex laptop-xl:right-0 laptop-xl:-top-[60rem]">
 				<img src={HeroBgd} alt="Hero Bgd" className="w-[80%] laptop-xl:w-full" />
 			</div>
 			{children}
-			<div id='home' className='px-5 py-20 tab:px-8 laptop:flex laptop:pt-[10rem] laptop:pb-[15rem] laptop:max-w-[1200px] laptop:mx-auto'>
+			<div className='px-5 py-20 tab:px-8 laptop:flex laptop:pt-[10rem] laptop:pb-[15rem] laptop:max-w-[1200px] laptop:mx-auto'>
 				<div className='mb-10 laptop:w-[40%] laptop:mx-auto'>
 					<h1 className='grad-text text-5xl leading-normal capitalize text-center font-extrabold mb-5 tab:font-semibold laptop:text-left laptop:text-white'>
 						Get the latest apps from app stores

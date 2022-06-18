@@ -8,7 +8,7 @@ const About = () => {
 	return (
 		<div
 			id='about'
-			className='px-5 py-8 relative tab:px-8'>
+			className='px-5 py-[5rem] relative tab:px-8'>
 			<div className='absolute -top-28 left-0 -z-10'>
 				<img src={AboutBgd} alt='Services Bgd' className='w-full' />
 			</div>
