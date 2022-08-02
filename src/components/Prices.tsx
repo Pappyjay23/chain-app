@@ -33,14 +33,14 @@ const Prices = () => {
 							<img src={PricingImage} alt='pricing' />
 						</div>
 						<div className='text-center mb-10'>
-							{item.desc.map((desc) => (
+							{item.desc.map((desc, index) => (
 								<p
 									className='mb-4 text-sm text-blue-600 font-light'
 									key={index}>
 									{desc}
 								</p>
 							))}
-							{item.descDone.map((done) => (
+							{item.descDone.map((done, index) => (
 								<p
 									className='mb-4 text-sm text-slate-400 line-through font-light'
 									key={index}>

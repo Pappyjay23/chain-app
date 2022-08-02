@@ -29,9 +29,8 @@ const About = () => {
 					</div>
 					<div>
 						{AboutData.map((item, index) => (
-							<a href='/'>
+							<a href='/' key={index}>
 								<div
-									key={index}
 									className='text-center bg-white mb-5 rounded-[5rem] p-3 shadow-lg border border-slate-100 shadow-slate-200 w-full tab:w-[70%] tab:mx-auto'>
 									<p className='text-lg font-extrabold mb-1 hover:text-blue-500 tab:font-semibold tab:text-xl'>
 										{item.title}
